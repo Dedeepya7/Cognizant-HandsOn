@@ -1,0 +1,13 @@
+package com.cognizant.javadfse.week1.junit;
+
+public class MyService {
+    private final ExternalApi externalApi;
+
+    public MyService(ExternalApi externalApi) {
+        this.externalApi = externalApi;
+    }
+
+    public String process() {
+        return externalApi.getData();
+    }
+}
